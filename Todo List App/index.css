@@ -50,21 +50,27 @@ ul {
 
 li {
   padding: 10px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #3b3a3a;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color:#000000;
 }
 
 li button {
-  background-color: #e74c3c;
-  padding: 5px 10px;
+  background-color: #d70849;
+  padding: 10px 10px;
   border: none;
-  color: white;
-  font-size: 12px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
   cursor: pointer;
 }
 
 li button:hover {
   background-color: #c0392b;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
 }
