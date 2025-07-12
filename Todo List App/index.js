@@ -1,4 +1,5 @@
-// ✅ Save task
+// Save task
+
 function saveTasks() {
   const tasks = [];
 
@@ -12,7 +13,10 @@ function saveTasks() {
   localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
-// ✅ Load tasks
+
+
+// Load tasks
+
 function loadTasks() {
   const savedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
@@ -21,7 +25,11 @@ function loadTasks() {
   });
 }
 
+
 // Create task
+
+
+
 function createTask(taskValue, isCompleted = false) {
   const input = document.getElementById('task-input');
 // new task
@@ -68,6 +76,8 @@ function createTask(taskValue, isCompleted = false) {
   document.getElementById('taskList').appendChild(li);
 }
 
+
+
 // Add new task
 function add() {
   const input = document.getElementById('task-input');
@@ -85,6 +95,8 @@ function add() {
   input.value = ''; // clear input
   saveTasks();      // save after adding
 }
+
+
 
 // Load tasks on page load
 window.onload = loadTasks;
