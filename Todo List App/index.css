@@ -66,6 +66,10 @@ li button {
   cursor: pointer;
 }
 
+li :hover{
+  cursor: pointer;
+}
+
 li button:hover {
   background-color: #c0392b;
 }
