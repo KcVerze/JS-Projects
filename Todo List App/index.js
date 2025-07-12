@@ -13,8 +13,15 @@ function add(){
         li.textContent = taskText;
         // delete btn
         const deleteBtn = document.createElement("button");
-        delete
+        deleteBtn.textContent = "Delete";
+        deleteBtn.onClick = function(){ li.remove()};
 
+        // to combine the li and the deleteBtn
+        li.appendChild(deleteBtn);
+        // to put the new task below the previous task
+        document.getElementById('tasklist').appendChild(li);
+        // to clear input bar
+        input.value = '';
     }
 
 }
